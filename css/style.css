@@ -249,6 +249,7 @@ button {
     position: relative;
     top: 20px;
     z-index: 1;
+    
 }
 
 
@@ -738,6 +739,11 @@ top: 27%;
 }
 .copyright_text a:hover{
     color: #ef5051;
+}
+
+.logo_main img {
+    width: 100px;  /* 或您希望的宽度 */
+    height: auto;  /* 保持高度比例 */
 }
 
 
