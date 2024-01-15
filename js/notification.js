@@ -1,5 +1,5 @@
 
-emailjs.init('cRvLZ3RUw3QmirEFF')
+emailjs.init('cYszRWLG4VIoLB7uV')
 const btn = document.getElementById('btn-submit');
 
 document.getElementById('form')
@@ -9,7 +9,7 @@ document.getElementById('form')
    btn.innerHTML = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_4jy2yu9';
+   const templateID = 'template_fu48g3t';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
