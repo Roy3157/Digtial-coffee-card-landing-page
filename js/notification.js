@@ -1,5 +1,5 @@
 
-emailjs.init('cRvLZ3RUw3QmirEFF')
+
 const btn = document.getElementById('btn-submit');
 
 document.getElementById('form')
@@ -7,17 +7,20 @@ document.getElementById('form')
    event.preventDefault();
    btn.disabled = true;
    btn.innerHTML = 'Sending...';
+  //get the fields 
+  var body = 
 
-   const serviceID = 'default_service';
-   const templateID = 'template_4jy2yu9';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.innerHTML = 'Submit';
-      btn.disabled = false;
-    }, (err) => {
-      btn.innerHTML = 'Submit';
-      btn.disabled = false;
-      alert(JSON.stringify(err));
-    });
+  //get form data and send to backend
+  fetch('http://localhost:3000/api/sendEmail', {
+    method: 'POST',
+    body: body
+  }).then(()=> {
+    btn.innerHTML = 'Submit';
+    btn.disabled = false;
+  })
+  .catch(()=> {
+    btn.innerHTML = 'Submit';
+    btn.disabled = false;
+    alert(JSON.stringify(err));
+  });
 });
