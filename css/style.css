@@ -745,6 +745,9 @@ top: 27%;
     width: 100px;  /* 或您希望的宽度 */
     height: auto;  /* 保持高度比例 */
 }
+.carousel-item img {
+    width: 120px;
+}
 
 
 
