@@ -15,6 +15,7 @@ document.getElementById('form')
     .then(() => {
       btn.innerHTML = 'Submit';
       btn.disabled = false;
+      document.getElementById('form-submitted').classList.remove("hidden");
     }, (err) => {
       btn.innerHTML = 'Submit';
       btn.disabled = false;

@@ -748,6 +748,9 @@ top: 27%;
 .carousel-item img {
     width: 120px;
 }
+.hidden {
+    display: none;
+}
 
 
 
